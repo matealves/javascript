@@ -18,6 +18,7 @@ Let's go! 🚀
 ## Conteúdo do repositório
 
 Exercícios Pessoais - `Praticando` <br>
+
 Curso de JavaScript - Edson Maia - <a href="https://www.youtube.com/playlist?list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z">YouTube</a> <br>
 
 Curso de JavaScript -
