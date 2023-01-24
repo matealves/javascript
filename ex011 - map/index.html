@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.map()</title>
+  </head>
+  <body>
+    <h1>.map()</h1>
+    <h3>Mapeia todo o array</h3>
+
+    <pre>
+    <code>
+<strong>- EX01 - DOBRANDO VALORES DO ARRAY COM MAP</strong>
+
+    const numbers = [1, 4, 5, 9, 14, 23];
+    const doubleNumbers = numbers.map(function(elem) {
+        return elem *2;
+  })
+
+    console.log(doubleNumbers);
+
+ou método 2:
+
+    const numbers = [1, 4, 5, 9, 14, 23];
+    const doubleNumbers = numbers.map( num => num *2)
+
+    console.log(doubleNumbers);
+
+
+<strong>- EX02 - CONVERSOR DE FAHRENHEIT PARA CELCIUS COM 2 CASAS DECIMAIS</strong>
+
+    const fahrenheit = [0, 32, 45, 50, 75, 80, 120];
+    const celcius = fahrenheit.map(function(elem) {
+        return ((elem - 32) * 5/9).toFixed(2);
+    });
+
+ou método 2:
+
+    const fahrenheit = [0, 32, 45, 50, 75, 80, 120];
+    const celcius = fahrenheit.map( num => ((num - 32) * 5/9).toFixed(2));
+
+    console.log(celcius);
+
+    let n = "";
+    for(let x in celcius){
+      n += celcius[x] + ", ";
+  }
+    </code>
+  </pre>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

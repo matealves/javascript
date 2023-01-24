@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: auto;
+    border: 0;
+    background-color: #727272;
+    padding: 10px 25px;
+    color: #FFF;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: #414040;
+}

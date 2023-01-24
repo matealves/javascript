@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Manipulando atributos</title>
+</head>
+
+<body>
+  <h1>Manipulando atributos</h1>
+  <h3>Altera o atributo da tag ou pega o valor do atributo</h3>
+
+  <pre>
+    <code>
+<strong>- ex01 .setAttribute adiciona um atributo (atributo, valor)</strong>
+
+    document.querySelector('.imagem').setAttribute('src', filename);
+    document.querySelector('.imagem').setAttribute('data-animal', animalname);
+
+
+<strong>- ex02 .getAttribute pega o valor do atributo</strong>
+
+    let animal = document.querySelector('.imagem').getAttribute('data-animal');
+
+    </code>
+  </pre>
+
+  <div class="container">
+    <img src="cachorro.jpg" data-animal="cachorro" class="imagem"> <br>
+
+    <div class="botoes">
+      <button onclick="trocarImagem('cachorro.jpg', 'cachorro')">Cachorro</button>
+      <button onclick="trocarImagem('gato.jpg', 'gato')">Gato</button>
+
+      <button onclick="pegarAnimal()">Qual é o Animal?</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

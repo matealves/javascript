@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Scroll Suave</title>
+</head>
+
+<body>
+  <h1>Scroll Suave e Botão Subir para o Topo</h1>
+  <!-- <h3>O que faz</h3> -->
+
+  <pre>
+    <code>
+<strong>- ex01 SOBE O SCROLL COM EFEITO SUAVE</strong>
+
+function subirTela() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
+
+
+<strong>- ex02 QUANDO O SCROLL FOR 0 (ESTIVER NO TOPO) BOTÃO SOME</strong>
+
+function botaoVisivel() {
+  if (window.scrollY === 0) {
+    //ocultar botão
+    document.querySelector(".scrollbutton").style.display = "none";
+  } else {
+    //mostrar botão
+    document.querySelector(".scrollbutton").style.display = "block";
+  }
+}
+
+window.addEventListener("scroll", botaoVisivel);
+    </code>
+  </pre>
+  <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolor recusandae vel suscipit
+    assumenda, pariatur nobis corporis ipsa in et enim alias dicta beatae blanditiis ab veritatis. Perspiciatis, magnam
+    quidem.
+    <br><br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime distinctio aliquid sint molestias quis asperiores
+    ut nostrum, aspernatur nihil dolore et saepe obcaecati cupiditate quo eligendi, adipisci quibusdam dolor. Itaque.
+    <br><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde cum, nostrum excepturi dignissimos, quod
+    soluta blanditiis exercitationem, voluptate temporibus hic? Ullam quod optio necessitatibus alias eligendi molestiae
+    repudiandae quas?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos officia veritatis hic odio nobis tempora quod natus,
+    aliquam consectetur quae nisi facere expedita laborum laboriosam eius omnis magnam aspernatur ut!
+    <br><br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque eius sapiente at enim quibusdam molestias,
+    ullam sunt architecto, dignissimos sint praesentium voluptatem, dicta blanditiis voluptatum deserunt alias expedita
+    ducimus!Lorem
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi odio voluptate, cupiditate consequatur ullam
+    deserunt placeat, et modi labore hic perferendis natus odit voluptas aliquid saepe! Non magni consequuntur
+    perspiciatis.
+  </div>
+
+  <div class="scrollbutton" onclick="subirTela()">↑</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

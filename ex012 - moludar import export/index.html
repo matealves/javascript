@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular</title>
+  </head>
+  <body>
+    <h1>Modular com Export e Import</h1>
+    <h3>Exporta códigos de arquivos diferentes e importa em um arquivo separado (criar biblioteca própria).</h3>
+
+    <pre>
+    <code>
+<strong>- matematica.js (biblioteca)</strong>
+
+    export const criador = 'Mateus Alves';
+
+    export function somar(x, y) {
+        return x + y;
+    }
+
+    export function subtrair(x, y) {
+        return x - y;
+    }
+
+    export function dividir(x, y) {
+        return x / y;
+    }
+
+    export function multiplicar(x, y) {
+        return x * y;
+    }
+
+    function raiz(x) {
+        // ...
+        return x;
+    }
+
+<strong>- script.js</strong>
+
+    import {somar, subtrair, dividir, multiplicar, criador} from './matematica.js';
+
+    console.log(somar(50,23));
+    console.log(subtrair(50,23));
+    console.log(dividir(50,23).toFixed(2));
+    console.log(multiplicar(50,23));
+
+    console.log("Criador da biblioteca matematica.js: "+criador);
+
+    </code>
+  </pre>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

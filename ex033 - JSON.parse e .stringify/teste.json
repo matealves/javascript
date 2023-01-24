@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Mateus Alves",
+    "departamento": "Desenvolvimento",
+    "software": {
+      "admin": true,
+      "keys": ["aKNaN4HB&34", "lM&54GFVb7"]
+    },
+    "permission": true
+  },
+  {
+    "nome": "João Pedro",
+    "departamento": "Financeiro",
+    "software": {
+      "admin": false,
+      "keys": ["aa00f", "aa00f"]
+    },
+    "permission": false
+  }
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <h1>Promise</h1>
+    <h3>Faz uma promessa enquanto espera o retorno da requisição</h3>
+
+    <pre>
+    <code>
+<strong>- ex01</strong>
+
+function fazer() {
+  let promise = new Promise((resolve, reject)=>{
+      setTimeout(()=>{
+          resolve('OK');
+      }, 3000);
+  });
+  return promise;
+}
+
+fazer()
+.then((resposta)=>{
+  console.log("Retorno do servidor: "+resposta);
+});
+
+<strong>Aguarda 3 segundos e dá o retorno.</strong>
+    </code>
+  </pre>
+  <p id="demo"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

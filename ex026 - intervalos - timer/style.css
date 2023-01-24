@@ -1,0 +1,31 @@
+button {
+  margin-bottom: 10px;
+  border: 0;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.iniciar {
+  background-color: rgb(36, 116, 40);
+  color: #fff;
+}
+
+.iniciar:hover {
+  background-color: rgb(23, 75, 26);
+  transition: all ease 0.2s;
+}
+
+.parar {
+  background-color: rgb(206, 39, 67);
+  color: #fff;
+}
+
+.parar:hover {
+  background-color: rgb(153, 31, 51);
+  transition: all ease 0.2s;
+}
+
+.demo {
+  font-size: 20px;
+  margin-left: 27px;
+}
