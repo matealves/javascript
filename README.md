@@ -8,7 +8,7 @@ Clone o projeto, em seguida escolha a pasta da aula ou exercício desejado e rod
 
 Extensões recomendadas:
 
-`Prettier` <br>
+`Prettier` <br><br>
 `Live server`
 
 Let's go! 🚀
@@ -18,9 +18,11 @@ Let's go! 🚀
 ## Conteúdo do repositório
 
 Exercícios Pessoais - `Praticando` <br>
-Curso de JavaScript - Edson Maia - <a href="Curso de JavaScript - Edson Maia">YouTube</a> <br>
+Curso de JavaScript - Edson Maia - <a href="https://www.youtube.com/playlist?list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z">YouTube</a> <br>
+
 Curso de JavaScript -
-Matheus Battisti - Hora de Codar - <a href="https://www.youtube.com/playlist?list=PLnDvRpP8Bnewiqo_La2z29dtxGyuNf94y">YouTube</a> <br>
+Matheus Battisti - Hora de Codar - <a href="https://www.youtube.com/playlist?list=PLnDvRpP8BneysKU8KivhnrVaKpILD3gZ6">YouTube</a> <br>
+
 Dicas de JavaScript -
 Matheus Battisti - Hora de Codar - <a href="https://www.youtube.com/playlist?list=PLnDvRpP8Bnewiqo_La2z29dtxGyuNf94y">YouTube</a> <br>
 
