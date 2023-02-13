@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  padding: 30px;
+}
+
+.fight-area {
+  display: flex;
+  gap: 50px;
+}
+
+#char,
+#monster {
+  flex: 1;
+}
+
+.life-bar {
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.p1 .life-bar .bar {
+  height: inherit;
+  background: #ff0000;
+  border-radius: 5px;
+}
+.p2 .life-bar .bar {
+  height: inherit;
+  background: #245bd3;
+  border-radius: 5px;
+}
+
+.name {
+  display: block;
+  margin-top: 10px;
+}
+
+.btn {
+  text-align: center;
+}
+
+.p1 .attack-button {
+  background: #d32424;
+}
+.p2 .attack-button {
+  background: #245bd3;
+}
+
+.attack-button {
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 30%;
+  transition: filter 0.2s;
+  font-weight: bolder;
+}
+
+.attack-button:hover {
+  filter: brightness(1.1);
+}
+
+.log {
+  line-height: 25px;
+  padding: 10px;
+  margin-top: 25px;
+  border: 1px dotted #999;
+  height: 250px;
+  overflow-y: scroll;
+}
