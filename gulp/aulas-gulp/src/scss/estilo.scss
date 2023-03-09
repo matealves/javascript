@@ -1,0 +1,15 @@
+$fundo: #333;
+
+body {
+  background-color: $fundo;
+}
+
+button {
+  border-radius: 10px;
+  background-color: #fff;
+  color: $fundo;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  background-color: #555;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.area {
+  width: 250px;
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+
+  &:hover {
+    text-decoration: underline;
+    color: #f00;
+  }
+}

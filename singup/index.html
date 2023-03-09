@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="1.svg" />
+                    <h2>Welcome</h2>
+                    <h3>Let's create your username</h3>
+                    <input spellcheck="false" type="text" placeholder="mate.alves" />
+                    <button disabled type="button" onclick="goToSlide(1)">Next</button>
+                </div>
+                <div class="swiper-slide">
+                    <div className="image-wrapper">
+                        <img src="2.svg" />
+                    </div>
+                    <h2>Security</h2>
+                    <h3>Enter a strong password</h3>
+                    <input type="password" placeholder="Your password" />
+                    <button disabled type="button" onclick="goToSlide(2)">Next</button>
+                </div>
+                <div class="swiper-slide">
+                    <div className="image-wrapper">
+                        <img src="3.svg" />
+                    </div>
+                    <h2>Finish</h2>
+                    <h3>You're all good to go</h3>
+                    <button type="submit">Complete</button>
+                    <button class="secondary" onclick="restart()">Restart</button>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

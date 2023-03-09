@@ -1,0 +1,12 @@
+body {
+  background-color: #000;
+  font-size: 3em;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.teste {
+  background-color: #ff5521;
+  text-decoration: dashed;
+}
