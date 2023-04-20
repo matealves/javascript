@@ -21,9 +21,9 @@ body {
 .notification {
   position: absolute;
   bottom: 50px;
-  left: 50px;
+  right: 50px;
   width: max-content;
-  padding: 20px 15px;
+  padding: 15px 25px;
   border-radius: 4px;
   color: #fff;
   background-color: #9563ff;
@@ -31,11 +31,7 @@ body {
   transform: translateY(30px);
   opacity: 0;
   visibility: hidden;
-  animation: fade-in 4s linear forwards;
-}
-
-.hide {
-  display: none;
+  animation: fade-in 5s linear forwards;
 }
 
 .notification__progress {
@@ -48,7 +44,11 @@ body {
   transform-origin: left;
   background-color: #fff;
   border-radius: inherit;
-  animation: load 3s 0.25s linear forwards;
+  animation: load 4s 0.25s linear forwards;
+}
+
+.hide {
+  display: none;
 }
 
 @keyframes fade-in {
