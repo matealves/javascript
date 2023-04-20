@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <div class="notification hide">
+        <p>Welcome, <span id="user__value">user</span>!👋🏼</p>
+        <span class="notification__progress"></span>
+    </div>
     <div class="card">
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -19,7 +23,7 @@
                     <img src="1.svg" />
                     <h2>Welcome</h2>
                     <h3>Let's create your username</h3>
-                    <input spellcheck="false" type="text" placeholder="mate.alves" />
+                    <input id="user" spellcheck="false" type="text" placeholder="mate.alves" />
                     <button disabled type="button" onclick="goToSlide(1)">Next</button>
                 </div>
                 <div class="swiper-slide">
@@ -37,7 +41,7 @@
                     </div>
                     <h2>Finish</h2>
                     <h3>You're all good to go</h3>
-                    <button type="submit">Complete</button>
+                    <button type="submit" id="submit">Complete</button>
                     <button class="secondary" onclick="restart()">Restart</button>
                 </div>
             </div>

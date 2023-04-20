@@ -1,5 +1,8 @@
 const inputs = document.querySelectorAll("input");
 const buttons = document.querySelectorAll("button[type=button]");
+const submitButton = document.querySelector("#submit");
+const inputUser = document.querySelector("#user");
+const inputValue = document.querySelector("#user__value");
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -29,4 +32,15 @@ const checkValid = (event) => {
 
 inputs.forEach((input) => {
   input.addEventListener("input", checkValid);
+});
+
+submitButton.addEventListener("click", () => {
+  inputValue.textContent = inputUser.value;
+
+  const notify = document.querySelector(".notification");
+  notify.classList.remove("hide");
+
+  setTimeout(() => {
+    notify.classList.add("hide");
+  }, 5000);
 });
