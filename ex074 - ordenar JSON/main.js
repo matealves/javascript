@@ -57,13 +57,10 @@ var items = [
   { name: "Magnetic" },
   { name: "Zeros", value: 37 },
 ];
-items.sort(function (a, b) {
-  if (a.name > b.name) {
-    return 1;
-  }
+items.sort((a, b) => {
   if (a.name < b.name) {
     return -1;
+  } else {
+    return true;
   }
-  // a must be equal to b
-  return 0;
 });
