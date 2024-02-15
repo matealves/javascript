@@ -3,11 +3,14 @@ const paragrafo = document.createElement("p");
 
 btn.textContent = "Gerar token";
 paragrafo.classList.add("token");
-btn.addEventListener("click", () => gerarToken());
+btn.addEventListener("click", () => {
+  paragrafo.textContent = gerarToken();
+});
 
 const body = document.querySelector("body");
 body.append(btn, paragrafo);
 
+// Passar quantidade de caracteres, caso contrário retorna com 150
 function gerarToken(length = 150) {
   const caracteres =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmopqrstuvwxyz0123456789.-";
@@ -19,6 +22,5 @@ function gerarToken(length = 150) {
     token += caracteres[randomIndex];
   }
 
-  paragrafo.textContent = token;
   return token;
 }
